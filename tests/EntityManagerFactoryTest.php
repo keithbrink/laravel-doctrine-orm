@@ -906,7 +906,7 @@ class EntityManagerFactoryTest extends TestCase
         $this->cache = m::mock(CacheManager::class);
 
         $this->cache->shouldReceive('driver')
-                    ->times(count($this->caches)) // one for each cache driver
+                    ->times(count($this->caches)+ 1) // one for each cache driver + one default
                     ->andReturn(new ArrayAdapter());
     }
 

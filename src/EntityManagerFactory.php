@@ -104,6 +104,7 @@ class EntityManagerFactory
         $configuration = $this->setup->createConfiguration(
             Arr::get($settings, 'dev', false),
             Arr::get($settings, 'proxies.path'),
+            $this->cache->driver($defaultDriver),
         );
 
         $configuration->setSchemaManagerFactory(new DefaultSchemaManagerFactory);
