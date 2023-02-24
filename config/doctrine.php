@@ -34,7 +34,7 @@ return [
             ],
             'repository'    => Doctrine\ORM\EntityRepository::class,
             'proxies'       => [
-                'namespace'     => false,
+                'namespace'     => 'DoctrineProxies',
                 'path'          => storage_path('proxies'),
                 'auto_generate' => env('DOCTRINE_PROXY_AUTOGENERATE', false)
             ],
@@ -159,7 +159,7 @@ return [
     | Configure meta-data, query and result caching here.
     | Optionally you can enable second level caching.
     |
-    | Available: apc|array|file|illuminate|memcached|php_file|redis|void
+    | Available: apc|array|file|illuminate|memcached|php_file|redis
     |
     */
     'cache' => [
