@@ -20,7 +20,7 @@
         "doctrine/annotations": "^2",
         "doctrine/dbal": "^3.2",
         "doctrine/orm": "^2.14",
-        "doctrine/persistence": "^3",
+        "doctrine/persistence": "^2|^3",
         "illuminate/auth": "^9.0|^10.0",
         "illuminate/console": "^9.0|^10.0",
         "illuminate/container": "^9.0|^10.0",
